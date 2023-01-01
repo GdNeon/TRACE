@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 OMP_NUM_THREADS=1 python main_alltime_alt_ens_add_late_fusion_sensitive_transformer_layers.py train /disk/gao1/Transformer/data/ek55/ ../output --lr_scheduler --weight_mse_by_time 0

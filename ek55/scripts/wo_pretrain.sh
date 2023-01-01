@@ -1,0 +1,2 @@
+python main_alltime_alt_ens_add_late_fusion.py train /disk/gao1/Transformer/data/ek55/ ../output/abtest/stage1_wopretrain --lr_scheduler --weight_mse_by_time 0 --path_to_pretrain None
+python main_stage2_weightsum_add_late_fusion.py train /disk/gao1/Transformer/data/ek55/ ../output/abtest/stage1_wopretrain stage2 --load_fusion_weight --lr_scheduler

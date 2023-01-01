@@ -1,0 +1,3 @@
+CUDA_VISIBLE_DEVICES=1 python pretrain.py train ../Transformer/data/egtea ../Transformer/pretrain_model --data_id 3
+CUDA_VISIBLE_DEVICES=1 python main_alltime_alt_ens_add_late_fusion.py train ../Transformer/data/egtea ../Transformer/models/egtea --path_to_pretrain ../Transformer/pretrain_model --data_id 3 --lr_scheduler
+CUDA_VISIBLE_DEVICES=1 python main_stage2_weightsum_add_late_fusion.py train ../Transformer/data/egtea ../Transformer/models/egtea ../Transformer/models/egtea --data_id 3 --lr_scheduler --load_fusion_weight 
